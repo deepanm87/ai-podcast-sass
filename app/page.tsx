@@ -1,6 +1,9 @@
+import { Header } from "@/components/home/Header"
 
 export default function Home() {
   return (
-    <div>Hello, World!</div>
+    <div className="min-h-screen">
+      <Header />
+    </div>
   )
 }
