@@ -352,3 +352,7 @@ div[role="alertdialog"] {
       transparent 50%
     );
 }
+
+button {
+  cursor: pointer;
+}
