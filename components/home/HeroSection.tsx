@@ -3,6 +3,7 @@ import { auth } from "@clerk/nextjs/server"
 import { Sparkles } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { PodcastUploader } from "@/components/PodcastUploader"
 
 export async function HeroSection() {
   const { userId } = await auth()
@@ -35,7 +36,7 @@ export async function HeroSection() {
           {isSignedIn ? (
             <div className="space-y-6">
               <div className="glass-card-strong rounded-2xl p-8 hover-lift">
-                {/* <PodcastUploader />*/}
+                <PodcastUploader />
               </div>
               <div className="text-center">
                 <Link href="/dashboard/projects">
